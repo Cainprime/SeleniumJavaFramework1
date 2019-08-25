@@ -3,11 +3,12 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="demo.TestNGRetryFailedDemo">
+      <class name="demo.SauceLabsDemo">
         <methods>
-          <include name="test3"/>
+          <include name="testwin10Chrome" invocation-numbers="0"/>
+          <include name="cleanUpAfterTestMethod"/>
         </methods>
-      </class> <!-- demo.TestNGRetryFailedDemo -->
+      </class> <!-- demo.SauceLabsDemo -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
