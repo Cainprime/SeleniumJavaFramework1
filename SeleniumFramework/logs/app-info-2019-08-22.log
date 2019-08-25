@@ -1,0 +1,13 @@
+[INFO ] 2019-08-22 18:58:08.038 [main] Log4jDemo - This is information message
+[ERROR] 2019-08-22 18:58:08.039 [main] Log4jDemo - This is an error message
+[WARN ] 2019-08-22 18:58:08.039 [main] Log4jDemo - This is a warning message
+[FATAL] 2019-08-22 18:58:08.040 [main] Log4jDemo - This is a fatal message
+[INFO ] 2019-08-22 18:58:32.482 [main] Log4jDemo - This is information message
+[ERROR] 2019-08-22 18:58:32.482 [main] Log4jDemo - This is an error message
+[WARN ] 2019-08-22 18:58:32.482 [main] Log4jDemo - This is a warning message
+[FATAL] 2019-08-22 18:58:32.482 [main] Log4jDemo - This is a fatal message
+[TRACE] 2019-08-22 18:59:11.449 [main] Log4jDemo - This is trace message
+[INFO ] 2019-08-22 18:59:11.451 [main] Log4jDemo - This is information message
+[ERROR] 2019-08-22 18:59:11.451 [main] Log4jDemo - This is an error message
+[WARN ] 2019-08-22 18:59:11.452 [main] Log4jDemo - This is a warning message
+[FATAL] 2019-08-22 18:59:11.452 [main] Log4jDemo - This is a fatal message
