@@ -1,14 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
-  <test thread-count="5" name="Default test(failed)">
+<suite thread-count="3" parallel="tests" name="Failed suite [Suite1]" guice-stage="DEVELOPMENT">
+  <test thread-count="3" parallel="tests" name="TestOnFirefox(failed)">
+    <parameter name="browserName" value="firefox"/>
     <classes>
-      <class name="demo.SauceLabsDemo">
+      <class name="demo.TestNGMultiBrowserDemo">
         <methods>
-          <include name="testwin10Chrome" invocation-numbers="0"/>
-          <include name="cleanUpAfterTestMethod"/>
+          <include name="teardown"/>
+          <include name="setup"/>
+          <include name="test1"/>
         </methods>
-      </class> <!-- demo.SauceLabsDemo -->
+      </class> <!-- demo.TestNGMultiBrowserDemo -->
     </classes>
-  </test> <!-- Default test(failed) -->
-</suite> <!-- Failed suite [Default suite] -->
+  </test> <!-- TestOnFirefox(failed) -->
+</suite> <!-- Failed suite [Suite1] -->
