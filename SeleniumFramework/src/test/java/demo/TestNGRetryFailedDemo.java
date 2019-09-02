@@ -1,10 +1,6 @@
 package demo;
 
 import org.testng.annotations.Test;
-import static org.testng.Assert.assertTrue;
-
-import org.testng.Assert;
-import org.testng.annotations.Test;
 
 public class TestNGRetryFailedDemo {
 
@@ -19,9 +15,9 @@ public class TestNGRetryFailedDemo {
 		//int i=1/0;
 	}
 	
-	@Test(retryAnalyzer = listeners.RetryAnalyzer.class)
+	@Test
 	public void test3() {
 		System.out.println("I am inside test 3");
-		Assert.assertTrue(0>1);
+		//Assert.assertTrue(0>1);
 	}
 }

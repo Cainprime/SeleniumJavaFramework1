@@ -3,12 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="demo.SauceLabsDemo">
+      <class name="demo.TestNGMultiBrowserDemo">
         <methods>
-          <include name="testwin10Chrome" invocation-numbers="0"/>
-          <include name="cleanUpAfterTestMethod"/>
+          <include name="teardown"/>
+          <include name="setup"/>
+          <include name="test1"/>
         </methods>
-      </class> <!-- demo.SauceLabsDemo -->
+      </class> <!-- demo.TestNGMultiBrowserDemo -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

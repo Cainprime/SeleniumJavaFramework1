@@ -3,6 +3,7 @@ package utils;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
@@ -62,6 +63,14 @@ public class ExcelDataProvider {
 			//System.out.println();
 		}
 		return data;
+	}
+	@AfterTest
+	public void teardown() {
+
+		driver.close();
+		driver.quit();
+		System.out.println("Test Completed Successfully");
+
 	}
 
 }
